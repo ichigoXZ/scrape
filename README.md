@@ -6,5 +6,4 @@ python版本：Python3
 说明：可视实际网络状况调整sleep时间，不保证一次性清除，可能要多运行几次  
   
 universityrank.py  
-功能：rankscrape - 爬取https://www.usnews.com/education/best-global-universities/rankings  
-    的所有大学排名到CSV
+功能：rankscrape - 爬取https://www.usnews.com/education/best-global-universities/rankings的所有大学排名到CSV
