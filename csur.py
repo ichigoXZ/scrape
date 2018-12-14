@@ -32,7 +32,7 @@ with open("csur.csv","w") as csvfile:
 			id = link.attrs['href'].split('=')[-1]
 			rs = requests.get(url2, params={'id': id}, headers=headers, proxies=proxies)
 			bsObj2 = BeautifulSoup(rs.text, 'html.parser')
-			for line in bsObj2.findAll('a', href=re.compile('citation*')):
+			for line in bsObj2.findAll('a', href=re.compile('citation.*[0-9]$')):
 				# print(line.text)
 				writer.writerow([link.text, line.text, home+line.attrs['href']])
 
