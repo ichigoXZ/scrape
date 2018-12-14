@@ -12,7 +12,7 @@ chrome_options.add_argument("--user-agent=some user-agent name")
 desired_capabilities = DesiredCapabilities.CHROME  # 修改页面加载策略
 desired_capabilities["pageLoadStrategy"] = "none"  # 注释这两行会导致最后输出结果的延迟，即等待页面加载完成再输出
 
-driver = webdriver.Chrome()     # 你的google_driver所在目录
+driver = webdriver.Chrome("")     # 你的google_driver所在目录
 # driver.set_page_load_timeout(2)     # 设定页面加载限制时间
 
 def login(url):
