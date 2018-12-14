@@ -8,3 +8,10 @@ python版本：Python3
 universityrank.py  
 需要：beautifulsoup4  
 功能：rankscrape - 爬取https://www.usnews.com/education/best-global-universities/rankings 的所有大学排名到CSV
+
+topapers.py
+需要：requests
+功能：爬取HUST的TOP Paper
+
+csur.py
+功能：爬取acm library的csur的论文，然而好像不需要那么多年前的
